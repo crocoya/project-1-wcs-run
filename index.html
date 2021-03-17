@@ -6,6 +6,8 @@
         <meta name="viewport" content="width-device-width, initial-scale-1.0">
 
         <link href="./product.css" rel="stylesheet">
+        <link href="./product-carousel-test.css" rel="stylesheet">
+        
         
         
         <title>Яun Boulangerie Pâtisserie</title>
@@ -29,8 +31,27 @@
             <div class="content">
                 <h2>Nos Produits</h2>
             </div>
-            
+            <section class="vitrine-container">
+                <h1 class="title-container">Pâtisseries</h1>
+                <div class="container-img">
+                    <div id="slider" class="element">
+                        <img src="./images/pâtisserie/123830764_114184903827595_1505451056934231815_n.jpg" alt="La forêt de peupliers" id="slide">
+                        <div id="precedent" onclick="ChangeSlide(-1)"><</div>
+                        <div id="suivant" onclick="ChangeSlide(1)">></div>
+                    </div>
+                    <div id="slider" class="element">
+                        <img src="./images/pâtisserie/123830764_114184903827595_1505451056934231815_n.jpg" alt="La forêt de peupliers" id="slide">
+                        <div id="precedent" onclick="ChangeSlide(-1)"><</div>
+                        <div id="suivant" onclick="ChangeSlide(1)">></div>
+                    </div>
+                    <div id="slider" class="element">
+                        <img src="./images/pâtisserie/123830764_114184903827595_1505451056934231815_n.jpg" alt="La forêt de peupliers" id="slide">
+                        <div id="precedent" onclick="ChangeSlide(-1)"><</div>
+                        <div id="suivant" onclick="ChangeSlide(1)">></div>
+                    </div>
+                </div>
+            </section>
         </section>
-        
+        <script src="slider.js"></script>   
     </body>
 </html>
