@@ -6,7 +6,6 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    background: #E1D3BF;
 }
 
 .infoBloc{
@@ -46,7 +45,9 @@
         max-width: 100%; 
         height: auto;
         }
-
+    #contact{
+        background: #E1D3BF;
+    }
     #area {
         height: 5%;
         padding : 2px;
