@@ -13,6 +13,7 @@ body {
 
 #slider img {
     border-radius: 49px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
 }
 
 #precedent,
@@ -53,4 +54,14 @@ body {
     flex-basis: 30%;
     display: flex;
     
+}
+.fiche-commentaire {
+position: absolute;
+width: 352px;
+height: 140px;
+bottom: -50px;
+left: 0;
+background-color: white;
+border-radius: 25px;
+box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
 }
