@@ -28,7 +28,48 @@
     }
     .infoBloc:hover :first-child {
         animation-play-state: paused;
+
+    }
+
+img {
+  
+    position: relative;
+    max-width: 1440px; 
+    height: auto;
+
 }
+ #contactForm {
+    position: absolute;
+    width: 648px;
+    height: 27px;
+    left: 72px;
+    top: 180px;
+}
+ #name, #mail, #msg{
+        background-color: rgb(255, 255, 255);
+        margin:1%;
+        width: 80%;
+        height: 3.2em;
+        border-radius: 20px;
+        border-style: none;
+        text-align: center;
+}
+#submit{
+    justify-content: center;
+    background-color: #E1D3BF ;
+    margin:3%;
+    width: 50%;
+    height: 3.2em;
+    border-radius: 20px;
+    border-style: none;
+
+}
+area{
+    margin: 0 50%;
+}
+
+
+
 
 
   @keyframes defilement {
