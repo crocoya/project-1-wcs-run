@@ -33,3 +33,11 @@ MVP :
 - La nav
 - La présentation des produits
 
+<nav class="nav-mobile">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="product.html">Nos Produits</a></li>
+                    <li><a href="crew.html">Notre Equipe</a></li>
+                    <li><a href="contact.html">Contactez-nous</a></li>
+                </ul>
+            </nav>
