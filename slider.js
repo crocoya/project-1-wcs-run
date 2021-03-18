@@ -1,4 +1,4 @@
-var slide = new Array("foret-peuplier.jpg", "paysage-montagne.jpg", "chemin-automne.jpg", "prairie-alpes.jpg");
+var slide = new Array("le-cercle-celeste.jpg", "eclair-au-chocolat");
 var numero = 0;
 
 function ChangeSlide(sens) {

@@ -43,12 +43,15 @@ body {
 .title-container {
     text-align: center;
     font-size: 30px;
-    padding: 10px;
+    margin-top: -100px;
+    position: relative;
+    margin-bottom: -60px;
 }
 
 .container-img {
     display: flex;
     justify-content: space-between;
+    height: 535px;
 }
 .element {
     flex-basis: 30%;
@@ -59,9 +62,14 @@ body {
 position: absolute;
 width: 352px;
 height: 140px;
-bottom: -50px;
+bottom: -90px;
 left: 0;
 background-color: white;
 border-radius: 25px;
 box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+.patisserie {
+    display: flex;
+    flex-direction: column;
 }
