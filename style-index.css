@@ -53,6 +53,7 @@ body{
   {
       position: fixed;
       width: 100%;
+      padding:20px;
       top: 27px;
       left: 0;
       display: flex;
@@ -63,17 +64,16 @@ body{
   }
 
   header.sticky{
-	
-    padding: 5px 100px;
-	background: #000;
-    color: #fff;
+    padding: 0px;
+	  background: #fff;
+    filter: invert(1);
 }
 
 header .logo
 {
-	position: relative;
-    width: 100px;
-    height: 100px;
+	  
+    width: 60px;
+    height: 60px;
 }
 
 header ul
@@ -115,6 +115,7 @@ header ul li a:hover
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+  transition: 0.6s;
 
 }
 
@@ -123,7 +124,7 @@ h2{
     bottom: 70px;
     right: 70px;
     font-family: 'Bad Script', cursive;
-    font-size: 5em;
+    font-size: 7em;
     font-weight: 400;
 }
 .accueilBox{
@@ -156,14 +157,19 @@ h2{
 .acceuilBox_box1Title img {
     width: 250px;
     height: auto;
-    margin-right: 150px;
+    margin-right: 50px;
+}
+.acceuilBox_box1Title p{
+   font-size: 2em;
+   margin-left: 80px;
 }
 .acceuilBox_box1Network{
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     justify-content: center;
+    margin-right: 100px;
     
 }
 .fab {
@@ -171,7 +177,7 @@ h2{
     transition: 0.6s;
 }
 .fab:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 .fab.fa-facebook {  
     color: #3b5998;
@@ -321,3 +327,152 @@ h2{
   #radio4:checked ~ .navigation-auto .auto-btn4{
     background: #E1D3BF;
   }
+
+  
+  @media screen and (max-width: 640px){
+	
+    header{
+      padding: 0px;
+      z-index: 1000;
+      
+    }
+    
+    header.sticky{
+      padding: 0px;
+      z-index: 1000;
+    }
+
+    header .logo
+    {
+        position: relative;
+        width: 40px;
+        height: 40px;
+    }
+
+    .menu{
+      position: absolute;
+      top: 40px;
+      left: -100%;
+      display: block;
+      padding: 100px 50px;
+      text-align: center;
+      width: 100%;
+      height: 100vh;
+      background: #fff;
+      transition: 0.5s;
+      z-index:0;
+    }
+    .menu.active
+    {
+      left: 0;
+      
+    }
+    header ul li a
+    {
+      color: #111;
+      font-size: 25px;
+      margin: 20px;
+    }
+    .toggle{
+      width: 40px;
+      height: 40px;
+      background: url(icon/menu.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 30px;
+      cursor: pointer;
+      filter: invert(1);
+      transition: 0.2s;
+    }
+    .toggle.active
+    {
+      background: url(icon/close.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 25px;
+      cursor: pointer;
+      filter: invert(1);
+      transition: 0.2s;
+    }
+  
+    header.sticky .toggle{
+      filter: invert(1);
+    }
+    .accueilBox{
+      display: flex;
+      flex-direction: column;
+  
+  }
+  .acceuilBox_box1{
+    height: 250px;
+    width: 100%;
+}
+
+.acceuilBox_box1 p{
+    font-size: 1em;
+    font-family: 'Bad Script', cursive;
+    margin-left: 10px;
+
+}
+
+
+.acceuilBox_box1Title img {
+    width: 100px;
+    height: auto;
+    margin-right: 10px;
+}
+.acceuilBox_box1Network{
+  
+  align-items: center;
+  justify-content: center;
+  margin-right: 0px;
+  
+}
+
+.accueilBox_slider{
+  width: 100%;
+  height: 250px;
+}
+
+.slides{
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+.slide img{
+  width: 100%;
+  height: 250px;
+}
+
+.navigation-manual{
+  width: 100%; 
+  margin-top: -275px;
+}
+
+
+.navigation-auto{
+  width: 100%;
+  margin-top: 225px;
+}
+.badge{
+  width: 50px;    
+  }
+
+.banner{
+    height: 400px;
+    background-image: url(images/bannerMobile.png);
+    transition: 0.6s;
+    background-position: center;
+  
+  }
+  
+h2{
+      
+      bottom: 0px;
+      right: 5px;
+      font-family: 'Bad Script', cursive;
+      font-size: 5em;
+      font-weight: 400;
+  }
+}
