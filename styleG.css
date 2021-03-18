@@ -83,9 +83,10 @@ area{
         }
         
     #contactForm{
+        padding: 15px;
         width: 375px;
         height: 400px;
-        top: 406px;
+        top: 369px;
         left: 0;
         background: #E1D3BF;
     }
@@ -93,8 +94,8 @@ area{
     #name, #mail, #msg, #submit{
         background-color: rgb(246,246,246);
         margin:2% 0;
-        width: 300px;
-        height: 30px;
+        width: 320px;
+        height: 45px;
         border-radius: 20px;
         border-style: none;
         text-align: center;
@@ -102,6 +103,6 @@ area{
     #submit{
         background-color: #C4C4C4;
         margin:3% 0 ;
-        width: 30vh;
+        width: 28vh;
     }
 }
