@@ -108,7 +108,7 @@ header ul li a.active, header ul li a:hover {
     left: 5px;
 }
  #name, #mail, #msg, #submit{
-        background-color: rgb(0, 0, 0);
+        background-color: rgb(246,246, 246);
         margin:1% 0;
         width: 70vh;
         height: 6vh;
@@ -121,9 +121,67 @@ header ul li a.active, header ul li a:hover {
     background-color: #E1D3BF ;
     margin:3% 0;
     width: 50vh;
+
 }
 area{
     margin: 0 50%;
+}
+
+.footer{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 5px;
+  }
+  
+  .footer img{
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    height: auto;
+  }
+
+.fab {
+    margin: 15px;
+    transition: 0.6s;
+}
+.fab:hover {
+    transform: scale(1.1);
+}
+.fab.fa-facebook {  
+    color: #3b5998;
+}
+.fab.fa-linkedin-in {
+    color: #00A0DC;
+}
+.fab.fa-instagram-square{
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;        
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.badge{
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    width: 100px;
+    height: auto;
+    z-index: 15;
+    box-shadow: 0 0 0 0 rgba(61, 232, 75, 0.7);
+    border-radius: 50%;
+    background-color: rgba(61, 232, 75, 0.7);;
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/173024/jonathanlarradet_copy.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-color: rgba(61, 232, 75, 0.7);; 
+    -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    transition: 0.6s;
 }
 
   @keyframes defilement {
