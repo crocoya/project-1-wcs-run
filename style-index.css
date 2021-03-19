@@ -24,8 +24,9 @@ body{
     overflow: hidden;
     padding: 5px; 
     z-index: 10;
+    font-style: italic;
 }
-.infoBloc > :first-child {
+.defil {
     display: inline-block;                /* modèle de boîte en ligne */
     padding-right: 2em;                   /* un peu d'espace pour la transition */
     padding-left: 100%;                   /* placement à droite du conteneur */
@@ -35,7 +36,7 @@ body{
     cursor: pointer;
   }
 
-  .infoBloc:hover :first-child {
+  .defil:hover {
     animation-play-state: paused;
 }
 
@@ -126,6 +127,15 @@ h2{
     font-family: 'Bad Script', cursive;
     font-size: 7em;
     font-weight: 400;
+  
+}
+.banner h3{
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  font-family: 'Bad Script', cursive;
+  font-size: 3em;
+  font-weight: 400;
 }
 .accueilBox{
     display: flex;
@@ -140,6 +150,7 @@ h2{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    transition: 0.6s;
 }
 
 .acceuilBox_box1 p{
@@ -260,7 +271,7 @@ h2{
   }
   
   .manual-btn{
-    border: 2px solid #E1D3BF;
+    border: 2px solid #fff;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -272,7 +283,7 @@ h2{
   }
   
   .manual-btn:hover{
-    background: #E1D3BF;
+    background: #fff;
   }
   
   #radio1:checked ~ .first{
@@ -302,7 +313,7 @@ h2{
   }
   
   .navigation-auto div{
-    border: 2px solid #E1D3BF;
+    border: 2px solid #fff;
     padding: 5px;
     border-radius: 10px;
     transition: 1s;
@@ -313,22 +324,161 @@ h2{
   }
   
   #radio1:checked ~ .navigation-auto .auto-btn1{
-    background: #E1D3BF;
+    background: #fff;
   }
   
   #radio2:checked ~ .navigation-auto .auto-btn2{
-    background: #E1D3BF;
+    background: #fff;
   }
   
   #radio3:checked ~ .navigation-auto .auto-btn3{
-    background: #E1D3BF;
+    background: #fff;
   }
   
   #radio4:checked ~ .navigation-auto .auto-btn4{
-    background: #E1D3BF;
+    background: #fff;
   }
 
+.customerBox{
+  display: flex;
+}
+.customerBox_review{
+height: 386px;
+width: 60%;
+display: flex;
+justify-content: center;
+align-items: center;
+background-image: url('images/review.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+}
+.customerBox_title{
+   font-size: 2em;
+    color: #fff;
+   font-family: 'Bad Script', cursive;
+}
+.customerBox_presentation{
+  height: 386px;
+  width: 40%;
+  background-color:  #003249;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.slider{
+  position: relative;
+	width: 80%;
+	height: 60%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background:#fff;
+	box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+	overflow: hidden;
+  border: 5px solid #E1D3BF;
+  margin-bottom: 20px;
+}
+.slider:before{
+    content:"";
+    background-size: 100%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-image: url(icon/quote1.png) ;
+    background-repeat: no-repeat;
+    top: 1em;
+    left: .7em;
+    z-index: 1000;
+}
+.slider:after{
+  content:"";
+  background-size: 100%;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-image: url(icon/quote2.png) ;
+  background-repeat: no-repeat;
+  bottom: .5em;
+  right: .7em;
+  z-index: 1000;
+}
+
+.contentSlider{
+  position: absolute;
+	width: 200%;
+	margin: 0;            
+	padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  	/*CSS3 keyframes animation*/
+	animation-name: AutoSlide;
+	animation-duration: 10s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+}
+.sliderText{
+  width: 50%;
+  padding-left: 12.5%;
+  padding-right: 10%;
   
+}
+.sliderText p{
+  color: #111;
+  font-size: 20px;
+  font-family: 'Poppins', sans-serif;
+  line-height: 32px;
+  font-style: italic;
+
+  
+}
+.sliderText h3{
+  font-size: 1em;
+  font-family: 'Bad Script', cursive;
+  color: #111;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+
+@keyframes AutoSlide {
+	0%, 25%, 100% {
+		left: 0px; /*1ère image*/
+	}
+	35%, 80% {
+		left: -100%; /*2ème image*/
+	}
+
+}
+
+.footer{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  padding: 5px;
+}
+
+.footer img{
+  width: 100px;
+  height: auto;
+}
+.btnfooter {
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  padding: 15px 20px;
+  border: 3px solid #003249;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  transition: 0.3s;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btnfooter:hover{
+  transform: scale(1.1);
+}
   @media screen and (max-width: 640px){
 	
     header{
@@ -475,4 +625,62 @@ h2{
       font-size: 5em;
       font-weight: 400;
   }
+.banner h3{
+     bottom: 0px;
+      right: 10px;
+      font-family: 'Bad Script', cursive;
+      font-size: 1em;
+      font-weight: 400;
+}
+.customerBox{
+  display: flex;
+  flex-direction: column;
+}
+.customerBox_review{
+height: 250px;
+width: 100%;
+
+}
+.customerBox_presentation{
+  height: 250px;
+  width: 100%;
+}
+.sliderText{
+  width: 50%;
+  padding-left: 8%;
+  padding-right: 5%;  
+}
+.sliderText p{
+  font-size: 15px;
+  line-height: 20px;
+}
+.sliderText h3{
+  font-size: 15px;
+  font-family: 'Bad Script', cursive;
+  margin-bottom: 5px;
+}
+.slider:before{
+  width: 15px;
+  height: 15px;
+}
+.slider:after{
+width: 15px;
+height: 15px;
+
+}
+.slider{
+  margin-bottom: 15px;
+}
+.footer{
+  flex-direction: column;
+}
+.footer img{
+  display: none;
+}
+.btnfooter {
+  font-size: 10px;
+  padding: 10px 15px;
+  transition: 0.3s;
+  margin-bottom: 5px;
+}
 }

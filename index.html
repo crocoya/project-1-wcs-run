@@ -5,30 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-    <link href="candytheme.css" rel="stylesheet">
+    <link href="theme.css" rel="stylesheet">
     <link href="style-index.css" rel="stylesheet">
     <title> Яun Boulangerie Pâtisserie </title>
 </head>
 <body>
     <div class="infoBloc">
-        <div> Adressse , numéro de télèphone, ouvert 7/7</div> 
+        <div class="defil"> Adressse , numéro de télèphone, ouvert 7/7 même après le couvre feu</div> 
     </div>
 
     <header id="head">
 		<img src="images/logo.png" class="logo">
 		<div class="toggle" onclick="toggleMenu();"></div>
 		<ul class="menu">
-			<li> <a href="#home" class="active" onclick="toggleMenu();">Home</a></li>
-			<li> <a href="#products" onclick="toggleMenu();"> Nos produits </a> </li>
-			<li> <a href="#crew" onclick="toggleMenu();"> Crew</a></li>
-			<li> <a href="#contact" onclick="toggleMenu();"> Contact</a></li>
+			<li class="anav"> <a href="#home" class="active" onclick="toggleMenu();">Home</a></li>
+			<li class="anav"> <a href="#products"  onclick="toggleMenu();"> Nos produits </a> </li>
+			<li class="anav"> <a href="#crew" onclick="toggleMenu();"> Crew</a></li>
+			<li class="anav"> <a href="#contact" onclick="toggleMenu();"> Contact</a></li>
 		</ul>
     </header>   
 
     <section class="banner" id="banner">
         <div>
              <h2> Яun, </h2>
-            
+              <h3 class="subtitle"> Patisserie - Boulangerie </h3>
+              <button class="btnmode1">Candy mode</button>
+              <button class="btnmode2">Mystery mode</button>
         </div>
     </section>	
 	
@@ -47,9 +49,9 @@
           
 
                 <div class="acceuilBox_box1IconNetwork">
-                    <i class="fab fa-linkedin-in fa-2x"></i>
-                    <i class="fab fa-facebook fa-2x"></i>
-                    <i class="fab fa-instagram-square fa-2x"></i>
+                    <a href="https://www.linkedin.com/home/?originalSubdomain=fr" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
+                    <a href="https://www.facebook.com/pages/category/Just-For-Fun/Run-Boulangerie-P%C3%A2tisserie-110002427178075/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+                    <a href="https://www.instagram.com/run_patisserieboulangerie/?hl=fr" target="_blank"><i class="fab fa-instagram-square fa-2x"></i></a>
                 </div>
 
             </div>
@@ -66,10 +68,10 @@
           <!--radio buttons end-->
           <!--slide images start-->
           <div class="slide first">
-            <img src="images/slide1.jpg" alt="">
+            <img src="images/slide1.jpg" alt="" class="imgslide">
           </div>
           <div class="slide">
-            <img src="images/slide2.jpg" alt="">
+            <img src="images/slide2.jpg" alt="" class="imgslide2">
           </div>
           <div class="slide">
             <img src="images/slide3.jpg" alt="">
@@ -99,9 +101,48 @@
       <!--image slider end-->
         </div>
     </section>
-  <div><img src="images/uber.png" class="badge"></div>
 
- 
+    <section class="customerBox">
+        
+        <div class="customerBox_presentation">
+           <h1 class="customerBox_title">Nos clients </h1>
+          <div class="slider">
+                <div class="contentSlider">
+                  
+                  <div class="sliderText">
+                      <h3>Gérard, </h3>
+                    <p class="commclient">"C'était super bon,</br> merci pour tout, j'adore !"</p> 
+                  </div>
+                  <div class="sliderText">
+                      <h3>Amandine, </h3>
+                    <p class="commclient2">"C'était succulent ,</br> quelles saveurs, on en redemande !"</p> 
+                  </div>
+                  
+
+                </div>
+          </div>      
+        </div>
+        <div class="customerBox_review">
+           
+            
+        </div>
+    </section>
+
+  <a href="https://www.ubereats.com/fr/nantes/food-delivery/run-patisserie-boulangerie/dsfD9E7kQvmog7ioV_OLkA" target="_blank"><img src="images/uber.png" class="badge" id="badge"></a>
+    
+  <section class="footer">
+
+    <div class="acceuilBox_box1IconNetwork">
+      <a href="https://www.linkedin.com/home/?originalSubdomain=fr" target="_blank"><i class="fab fa-linkedin-in fa-2x"></i></a>
+      <a href="https://www.facebook.com/pages/category/Just-For-Fun/Run-Boulangerie-P%C3%A2tisserie-110002427178075/" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+      <a href="https://www.instagram.com/run_patisserieboulangerie/?hl=fr" target="_blank"><i class="fab fa-instagram-square fa-2x"></i></a>
+  </div>
+
+    <img src="images/logo.png" class="logo">
+
+    <a class="btnfooter">Contactez nous</a>
+
+  </section>
   <script src="https://unpkg.com/scrollreveal">
 	</script>
   <script src="main.js"></script>

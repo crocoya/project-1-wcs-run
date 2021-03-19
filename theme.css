@@ -1,40 +1,71 @@
 
 
-*
-{
-    user-select: none;
-    -webkit-tap-highlight-color:transparent;
+.btnmode1{
+    position: absolute;
+    bottom: 0px;
+    left: 120px;
+    border-radius: 5px 5px 0px 0px;
+    background-color: #ff7eb4;
+    border: none;
+    color: #fff;
+    padding: 10px 10px 5px 10px;
+    font-style: italic;
+    font-family: 'Bad Script', cursive;
+    font-size: 20px;
+    transition: 0.6s;
+    outline: none;   
 }
 
-*:focus
-{
-    outline: none;
+.btnmode2{
+    position: absolute;
+    bottom: 0px;
+    left: 250px;
+    border-radius: 5px 5px 0px 0px;
+    background-color: #003249;
+    border: none;
+    color: #fff;
+    padding: 10px 10px 5px 10px;
+    font-style: italic;
+    font-family: 'Bad Script', cursive;
+    font-size: 20px;
+    transition: 0.6s;
+    outline: none; 
 }
 
-.candy-mode {
-    background:#f43685;
-    color: white;
-  }
-
-body
-{
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    background-color: #f1f9f9;
+.btnmode1:hover,
+.btnmode2:hover{
+    padding-bottom: 15px;
+    
 }
 
-#app-cover
-{
-    display: table;
-    width: 600px;
-    margin: 80px auto;
-    counter-reset: button-counter;
+
+.banner.candy-mode{
+    background-image: url(images/bonbonbanner.png);
+    color: #fff;
+}
+.acceuilBox_box1.candy-mode{
+    background-color:#fd62a3;
+    color: #fff;
 }
 
-.row
-{
-    display: table-row;
+#head.candy-mode.sticky{
+    background-color: #ffb1d2;
+    filter: invert(0);
 }
+
+.banner.tacos-mode{
+    background-image: url(images/tacosbanner.png);
+    color: #fff;
+}
+.acceuilBox_box1.tacos-mode{
+    background-color:#bafd62;
+    color: #fff;
+}
+#head.tacos-mode.sticky{
+    background-color: #bafd62;
+    filter: invert(0);
+}
+/*
 
 .toggle-button-cover
 {
@@ -155,3 +186,4 @@ body
 {
     transition: 0.3s ease all;
 }
+*/
