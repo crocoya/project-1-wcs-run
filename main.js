@@ -42,16 +42,7 @@ sr.reveal('.banner__title',{});
 sr.reveal('h2',{});
 sr.reveal('.subtitle',{});
 sr.reveal('h3',{delay: 200}); 
-sr.reveal('.scrollp',{delay: 400}); 
-
-
-
-
-/*SCROLL WORK*/
-sr.reveal('.work__img',{interval: 200}); 
-
-/*SCROLL CONTACT*/
-sr.reveal('.contact__input',{interval: 200}); 
+sr.reveal('p',{delay: 400}); 
 
 // candy mode
 
@@ -74,6 +65,7 @@ const comm2 = document.querySelector('.commclient2');
 
 
 btncandy.addEventListener('click', function(){
+  btncandy.classList.toggle("active");
   banner.classList.toggle("candy-mode");
   acceuilBox.classList.toggle("candy-mode");
   nav.classList.toggle("candy-mode");
@@ -81,6 +73,7 @@ btncandy.addEventListener('click', function(){
 });
 
 btntacos.addEventListener('click', function(){
+  btntacos.classList.toggle("active");
   banner.classList.toggle("tacos-mode");
   acceuilBox.classList.toggle("tacos-mode");
   menu.classList.toggle("tacos-mode");
@@ -91,7 +84,7 @@ btntacos.addEventListener('click', function(){
 		subtitle.innerHTML = " Tacosserie";
 	};
   info.classList.toggle("tacos-mode");
-  if (info.className === "infoBloc") {
+  if (info.className === "defil") {
 		info.innerHTML = "Adressse , numéro de télèphone, ouvert 7/7 même après le couvre feu";
 	} else {
 		info.innerHTML = " 'Livraison de tacos moisi et pas moisi , ça dépend quel jour 24/24'";

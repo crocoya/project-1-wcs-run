@@ -32,12 +32,13 @@
     outline: none; 
 }
 
-.btnmode1:hover,
-.btnmode2:hover{
+.btnmode1.active{
     padding-bottom: 15px;
     
 }
-
+.btnmode2.active{
+    padding-bottom: 15px;
+}
 
 .banner.candy-mode{
     background-image: url(images/bonbonbanner.png);
@@ -65,6 +66,27 @@
     background-color: #bafd62;
     filter: invert(0);
 }
+
+@media screen and (max-width: 640px){
+
+    .btnmode1{
+        position: absolute;
+        bottom: 0px;
+        left: 10px; 
+        padding: 5px 5px 10px 5px;
+        font-size: 5px;
+        
+    }
+    
+    .btnmode2{
+        position: absolute;
+        bottom: 0px;
+        left: 60px; 
+        padding: 5px 5px 10px 5px;
+        font-size: 5px;
+    }
+}
+
 /*
 
 .toggle-button-cover
