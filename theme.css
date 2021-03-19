@@ -73,17 +73,17 @@
         position: absolute;
         bottom: 0px;
         left: 10px; 
-        padding: 5px 5px 10px 5px;
-        font-size: 5px;
+        padding: 5px 5px 5px 5px;
+        font-size: 10px;
         
     }
     
     .btnmode2{
         position: absolute;
         bottom: 0px;
-        left: 60px; 
-        padding: 5px 5px 10px 5px;
-        font-size: 5px;
+        left: 80px; 
+        padding: 5px 5px 5px 5px;
+        font-size: 10px;
     }
 }
 
