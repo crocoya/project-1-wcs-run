@@ -193,13 +193,13 @@ padding-bottom: 100px;
 }
 .container .card:hover .contentBX .content{
   transform: translateX(0px);
-  transition-delay: 0.5s;
+  transition-delay: 0.1s;
 }
 .container .card .contentBX .content p {
   font-size: 1em;
   line-height: 1.4em;
   font-weight: 12px;
-  padding: 35px;
+  padding: 50px;
   width: 250px;
   color: #fff;
   border-radius: 200px;
@@ -207,6 +207,7 @@ padding-bottom: 100px;
 	backdrop-filter: blur(5px);
   font-family: 'Poppins', sans-serif;
 	z-index: 1;
+  transition: 0.1s;
 }
 .badge{
   position: fixed;
