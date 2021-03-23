@@ -88,7 +88,7 @@ body{
     align-items: center;
 }
 
-#slider img {
+#slider {
     border-radius: 49px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
 }
