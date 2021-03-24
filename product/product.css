@@ -107,16 +107,8 @@ body{
     left: 0;
 }
 
-#precedent1:hover {
-    background-color: white;
-}
-
 #suivant1 {
     right: 0;
-}
-
-#suivant1:hover {
-    background-color: white;
 }
 
 #slider1:hover #precedent1, #slider1:hover #suivant1 {
@@ -149,21 +141,52 @@ body{
     left: 0;
 }
 
-#precedent2:hover {
-    background-color: white;
-}
-
 #suivant2 {
     right: 0;
-}
-
-#suivant2:hover {
-    background-color: white;
 }
 
 #slider2:hover #precedent2, #slider2:hover #suivant2 {
     opacity: 1;
 }
+
+#slider3 {
+    position: relative;
+    margin: 60px;
+    display: flex;
+    align-items: center;
+}
+
+#slider3 {
+    border-radius: 49px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+#precedent3, #suivant3 {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    position: absolute;
+    font-size: 50px;
+    color: black;
+    font-family: sans-serif;
+}
+
+#precedent3 {
+    left: 0;
+}
+
+#suivant3 {
+    right: 0;
+}
+
+#slider3:hover #precedent3, #slider3:hover #suivant3 {
+    opacity: 1;
+}
+
+.border-radius {
+    border-radius: 49px;
+}
+
 .title-img {
     text-align: center;
     font-size: 30px;
