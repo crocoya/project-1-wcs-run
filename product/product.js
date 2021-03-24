@@ -15,7 +15,7 @@ menu.classList.toggle('active');
 
 }
 
-var slide = new Array("foret-peuplier.jpg", "paysage-montagne.jpg", "chemin-automne.jpg", "prairie-alpes.jpg");
+var slide = new Array("images/pâtisserie/macaron-blanc.jpg", "images/pâtisserie/macaron.jpg", "images/pâtisserie/mirtille.jpg");
 var numero = 0;
 
 function ChangeSlide(sens) {
@@ -24,5 +24,17 @@ function ChangeSlide(sens) {
         numero = slide.length - 1;
     if (numero > slide.length - 1)
         numero = 0;
-    document.getElementById("slide").src = slide[numero];
+    document.getElementById("slide1").src = slide[numero];
+}
+
+var slide2 = new Array("images/pâtisserie/macaron-blanc.jpg", "images/pâtisserie/macaron.jpg", "images/pâtisserie/mirtille.jpg");
+var numero2 = 0;
+
+function ChangeSlide2(sens) {
+    numero2 = numero2 + sens;
+    if (numero2 < 0)
+        numero2 = slide2.length - 1;
+    if (numero2 > slide2.length - 1)
+        numero2 = 0;
+    document.getElementById("slide2").src = slide2[numero2];
 }

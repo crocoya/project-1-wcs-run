@@ -81,19 +81,19 @@ body{
     font-weight: 100;
 }
 
-#slider {
+#slider1 {
     position: relative;
     margin: 60px;
     display: flex;
     align-items: center;
 }
 
-#slider {
+#slider1 {
     border-radius: 49px;
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
 }
 
-#precedent, #suivant {
+#precedent1, #suivant1 {
     cursor: pointer;
     transition: opacity 0.3s ease;
     opacity: 0;
@@ -103,26 +103,67 @@ body{
     font-family: sans-serif;
 }
 
-#precedent {
+#precedent1 {
     left: 0;
 }
 
-#precedent:hover {
+#precedent1:hover {
     background-color: white;
 }
 
-#suivant {
+#suivant1 {
     right: 0;
 }
 
-#suivant:hover {
+#suivant1:hover {
     background-color: white;
 }
 
-#slider:hover #precedent, #slider:hover #suivant {
+#slider1:hover #precedent1, #slider1:hover #suivant1 {
     opacity: 1;
 }
 
+#slider2 {
+    position: relative;
+    margin: 60px;
+    display: flex;
+    align-items: center;
+}
+
+#slider2 {
+    border-radius: 49px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+}
+
+#precedent2, #suivant2 {
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    position: absolute;
+    font-size: 50px;
+    color: black;
+    font-family: sans-serif;
+}
+
+#precedent2 {
+    left: 0;
+}
+
+#precedent2:hover {
+    background-color: white;
+}
+
+#suivant2 {
+    right: 0;
+}
+
+#suivant2:hover {
+    background-color: white;
+}
+
+#slider2:hover #precedent2, #slider2:hover #suivant2 {
+    opacity: 1;
+}
 .title-img {
     text-align: center;
     font-size: 30px;
