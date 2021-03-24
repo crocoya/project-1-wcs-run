@@ -124,7 +124,9 @@ header ul li a.active, header ul li a:hover {
     width: 50vh;
 }
 
-area{
+textarea{
+    display: flex;
+    padding : 12px;
     margin: 0 50%;
 }
 
@@ -319,7 +321,7 @@ area{
     }
 
     .footer{
-    top : 250px;
+    top : 280px;
     position : relative;
     flex-direction: column;
     }
@@ -335,7 +337,6 @@ area{
     margin-bottom: 5px;
     }
     .acceuilBox_box1Network{
-
     align-items: center;
     justify-content: center;
     margin-right: 0px;
